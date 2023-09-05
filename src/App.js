@@ -9,13 +9,14 @@ export default function App() {
         <SearchEngine defaultCity="Berlin" />
         <footer>
           This project was coded by{" "}
-          <a href="https://sadhbhredmond.dev/" target="_blank">
+          <a href="https://sadhbhredmond.dev/" target="_blank" rel="noreferrer">
             Sadhbh Redmond
           </a>{" "}
           and is{" "}
           <a
             href="https://github.com/sadhbh23/SheCodes-React-Weather-App"
             target="_blank"
+            rel="noreferrer"
           >
             open-sourced
           </a>{" "}
