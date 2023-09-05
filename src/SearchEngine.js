@@ -13,7 +13,7 @@ export default function SearchEngine(props) {
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
-      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       loaded: true,
       temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
