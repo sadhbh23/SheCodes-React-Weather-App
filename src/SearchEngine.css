@@ -1,4 +1,4 @@
-.Weather {
+.SearchEngine {
   color: #878787;
   border: 1px solid #dadde1;
   border-radius: 4px;
@@ -6,7 +6,7 @@
   padding: 16px;
 }
 
-.Weather h1 {
+.SearchEngine h1 {
   color: #878787;
   font-size: 24px;
   font-weight: 100;
@@ -15,32 +15,32 @@
   margin: 20px 0 0 0;
 }
 
-.Weather ul {
+.SearchEngine ul {
   padding: 0;
 }
 
-.Weather li {
+.SearchEngine li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
   list-style: none;
 }
 
-.Weather canvas {
-  height: 64px;
-  margin-right: 10px;
+.SearchEngine canvas {
+  margin-bottom: 4px;
   position: relative;
   top: 8px;
 }
 
-.Weather .temperature-numeric-value {
+.SearchEngine .temperature-numeric-value {
   color: rgb(33, 33, 33);
   font-size: 64px;
   font-weight: 400;
   line-height: 64px;
+  margin-left: 10px;
 }
 
-.Weather .temperature-unit {
+.SearchEngine .temperature-unit {
   color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 400;

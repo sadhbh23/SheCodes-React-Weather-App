@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Weather.css";
+import "./SearchEngine.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
@@ -37,7 +38,7 @@ export default function SearchEngine(props) {
 
   if (weatherData.loaded) {
     return (
-      <div className="Weather">
+      <div className="SearchEngine">
         <div className="container main-content">
           <form onSubmit={handleSubmit}>
             <div className="row">
@@ -60,6 +61,7 @@ export default function SearchEngine(props) {
             </div>
           </form>
           <WeatherInfo data={weatherData} />
+          <WeatherForecast />
         </div>
       </div>
     );
