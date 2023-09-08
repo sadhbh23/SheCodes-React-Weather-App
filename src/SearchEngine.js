@@ -11,6 +11,7 @@ export default function SearchEngine(props) {
   function handleResponse(response) {
     setWeatherData({
       city: response.data.name,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
@@ -61,7 +62,7 @@ export default function SearchEngine(props) {
             </div>
           </form>
           <WeatherInfo data={weatherData} />
-          <WeatherForecast />
+          <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
     );
